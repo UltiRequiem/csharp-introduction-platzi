@@ -1,10 +1,10 @@
-﻿namespace HelloWorld
+﻿namespace HelloWorld;
+
+internal static class Program
 {
-    internal static class Program
+    private static void Main()
     {
-        private static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!");
-        }
+        const string message = "Hello, World!";
+        Console.WriteLine(message);
     }
 }
