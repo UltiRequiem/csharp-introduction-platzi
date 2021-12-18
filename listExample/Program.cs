@@ -1,7 +1,5 @@
-﻿var tacos = new List<string>();
+﻿var (rnd, randomNumbers, randomNumbersToAdd) = (new Random(), new List<int>(), 10);
 
-tacos.Add("5 Tacos de suadero");
-tacos.Add("2 Tacos de pollo");
-tacos.Add("6 Tacos de chancho");
+for (int j = 0; j < randomNumbersToAdd; j++) randomNumbers.Add(rnd.Next());
 
-tacos.ForEach(taco => Console.WriteLine(taco));
+randomNumbers.ForEach(Console.WriteLine);
